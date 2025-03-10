@@ -1,0 +1,320 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Valle Vital</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="js/bootstrap.bundle.min.js"></script> -->
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Permanent+Marker&display=swap"
+      rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&amp;family=Rubik+Dirt&amp;family=Share+Tech+Mono&amp;display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Menú Principal
+          1. Incluir la navbar de Bootstrap.
+          2. Eliminar la <a> Navbar.
+          3. Inlcuir el ícono dentro del navbar-collapse antes del <ul> (una <img> dentro de una <a>).
+          4. Inlcuir todos los enlaces: Sobre mí, Proyectos, Testimonios y Contacto con el href a cada sección correspondiente en la página.
+          5. Ajustar el estilo para cambiar el color de fondo, alinear el ícono a la izquierda y el menú a la derecha y generar un paddig de 2 rem.
+          6. En la versión mobile esconder el ícono y alinear los ítems del menú al centro.
+      -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid navContent">
+        <a class="" href="#">
+          <img src="img/icono.png" alt="Logo" width="35" height="35">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Restaurantes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terstimonio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Sección Banner 
+          1. Crear un elemento section que sea flex y cambiar el color de fondo
+          2. Crear 2 items div
+          3. En el primer div incluir la imagen img/desarrollador-ejemplo.svg un h1 y un h2
+          4. En el segundo div incluir la imagen hero-inferior.svg
+          5. Hacer que el segundo div se visualice debajo del primero (NO enseguida).
+          6. Al primer div:
+              - Redimensionar la imagen a 200px x 200px con un margen de 20px y un redondeado del 50%
+              - Colocar cada elemento uno debajo de otro.
+              - Centrar todos los elementos.
+              - Colocar un padding de 3rem.
+              - Centrar el texto de los títulos.
+              - Cambiar el tipo de fuente del título 1 y dar un tamaño de 2.5rem.
+              - Cambiar el tamaño del título 2 a 1.5rem y cambiar el color del texto.
+          7. Al segundo div:
+              - Hacer que la imgaque ocupe el 100% de la panatalla en dispositivos moviles, en escritorio debe ocupar un maximo de 600px
+              - Centrar la imagen
+      -->
+
+    <section class="mainSection">
+      <div class="Superior container">
+        <h1>Valle Vital</h1>
+        <h2>Proyecto enfocado a la población Vallecaucana para dar una mejor visibilidad publicitaria a los restaurantes saludables del municipio de Guadalajara de Buga y sus alrededores.
+        </h2>
+      </div>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Carrusel/Botanica 2.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Carrusel/365. 5.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Carrusel/Obrador.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección Sobre mi 
+          1. Crear un elemento section que sea flex:
+              - Darle ul alto fijo de 500px
+              - cambiar el color de fondo, el color de la letra sea blanco, un padding de 10px
+          2. Dentro div contenedor y dentro del div un h2 y una p
+          3. El contenedor debe tener un acho máximo de 600px y debe estar centrado con respecto al padre.
+          3. Colocar la p debajo del h2 y centradros
+          4. Al h2 cambiar el tamaño a 2re, colocar un paddin superior e inferor de 15px y cambair el tipo de fuente
+          5. A la p cambiar el tamaño a 1.2 rem
+      -->
+
+    <section class="aboutMe">
+      <div class="contenedor">
+        <img src="img/icono_frame.png" width="300" height="180">
+        <h2>¿Qué es Frame 23?</h2>
+        <p>Somos una productora de contenidos multimediales con un enfoque fresco,moderno y dinámico, especializados en piezas audiovisuales y gráficas que buscan destacar en el mercado.
+        </p>
+        <a href="conocenos.html" target="_blank" rel="noopener noreferrer" class="conocenos">Saber mas</a>
+      </div>
+    </section>
+
+    <!-- Sección Experiencia
+          1. Crear un elemento section flex, padding de 40 40 60 40
+          2. Crear un div con la clase container de bootstrap
+          3. Crear un div fila y por dentro 3 div columnas con los mismos tamaños que para mobiles ocupe 12 columnas y en escritorio ocupen de a 3 columnas
+          4. En cada div columna incluir: icono, un h2, un parrafo y ud div contenedor de etiquetas (cada etiqueta es un elemento span)
+          5. Para cada columna:
+              - Colocar un borde de 2px, centrar todos los elementos, dar un padding de 20px
+              - Al icono: tamaño de fuente de 2.5rem, color, color de fondo, padding 8px 19px y un border radius del 50%
+              - Al h2: tamaño de fuente de 25px, aplicar negrilla y un margin superior e inferior de 10px
+              - Centrar la p
+              - Para las etiquetas usar la clase badge de boostrap y adicional colocarle un fonto y redondeado, tamaño de fuente de 14px y negrilla
+              - Centrar las etiquetas
+              - En el hover colocar la letra blanca y un fondo negro
+      -->
+
+    <section class="experience">
+      <h2 id="restaurantes">Restaurantes</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 experienceContent">
+            <i class="bi"></i>
+            <img src="img/Iconos/LOGOBOTANICA.png" alt="" width="100" height="100">
+            <h2>Botánica</h2>
+            <p>Espacio creado para la gastronomía y cuidado, sostenibilidad del espacio refrescante enfocado en 
+              la cocina fresca y local, donde cada plato tiene exclusividad, ubicado en Buga, Botánica Restaurante 
+              ofrece una propuesta gastronómica enfocada en comida internacional, contemporánea y saludable.
+            </p>
+            <div class="etiquetas">
+              <span class="badge text-bg-primary">Carta</span>
+              <span class="badge text-bg-primary">Face</span>
+              <span class="badge text-bg-primary">Ig</span>
+              <span class="badge text-bg-primary">Wp</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 experienceContent">
+            <i class="bi"></i>
+            <img src="img/Iconos/LOGOBIOFOOD.png" alt="" width="100" height="100">
+            <h2>Biofood, Cocina oculta</h2>
+            <p>La especialidad de bio food son las meriendas entre ellos se encuentran los parfaits, 
+              waffles, y crepes entre otros.. el más demandado son los parfaits y el parfaits más pedido 
+              es el de chocobanano es un parfait elaborado a base de cocoa y frutas de temporada.</p>
+            <div class="etiquetas">
+              <span class="badge text-bg-primary">Carta</span>
+              <span class="badge text-bg-primary">Face</span>
+              <span class="badge text-bg-primary">Ig</span>
+              <span class="badge text-bg-primary">Wp</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 experienceContent">
+            <i class="bi"></i>
+            <img src="img/Iconos/LOGOVIDAFIT.png" alt="" width="100" height="100">
+            <h2>VidaFit</h2>
+            <p>Este establecimiento se dedica a promover un estilo de vida saludable, ofreciendo productos 
+              y comidas nutritivas. Se especializa en opciones alimenticias que incluyen pan de quinoa, 
+              proteínas y brownies saludables. Además, enfatizan la importancia de consumir frutas y verduras
+               frescas para mantener niveles adecuados. 
+            </p>
+            <div class="etiquetas">
+              <span class="badge text-bg-primary">Carta</span>
+              <span class="badge text-bg-primary">Face</span>
+              <span class="badge text-bg-primary">Ig</span>
+              <span class="badge text-bg-primary">Wp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 experienceContent">
+            <i class="bi"></i>
+            <img src="img/Iconos/LOGOANTOJITOSALUDABLES.png" alt="" width="150" height="100">
+            <h2>Antojitos Saludables</h2>
+            <p>Este establecimiento se enfoca en proporcionar opciones de comidas balanceadas, 
+              completas y deliciosas para el almuerzo diario. Ofrece una variedad de platos 
+              saludables que incluyen proteínas y otros nutrientes esenciales, adaptándose a 
+              quienes buscan mantener una alimentación equilibrada sin sacrificar el sabor.
+            </p>
+            <div class="etiquetas">
+              <span class="badge text-bg-primary">Carta</span>
+              <span class="badge text-bg-primary">Face</span>
+              <span class="badge text-bg-primary">Ig</span>
+              <span class="badge text-bg-primary">Wp</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 experienceContent">
+            <i class="bi"></i>
+            <img src="img/Iconos/LOGOELOBRADOR.png" alt="" width="100" height="100">
+            <h2>Panadería el Obrador</h2>
+            <p>Se especializa en la elaboración de una amplia variedad de panes, incluyendo opciones tradicionales, 
+              integrales y productos diseñados para personas con necesidades dietéticas específicas, como panes sin 
+              lácteos, sin gluten y sin azúcar. Además, ofrecen panes enriquecidos con ingredientes como chocolate, 
+              frutas, vegetales, frutos secos y hierbas medicinales, sumando más de 150 tipos diferentes de panes.
+            </p>
+              <div class="etiquetas">
+              <span class="badge text-bg-primary">Carta</span>
+              <span class="badge text-bg-primary">Face</span>
+              <span class="badge text-bg-primary">Ig</span>
+              <span class="badge text-bg-primary">Wp</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4 experienceContent">
+            <i class="bi"></i>
+            <img src="img/Iconos/LOGO365.png" alt="" width="150" height="100">
+            <h2>365 Días Contigo</h2>
+            <p>Calidad para el consumo de su clientela, este lugar se dedica a ofrecer productos saludables, 
+              libres de harinas y azúcares refinados, así como de grasas vegetales. Es reconocido por ser un 
+              espacio donde se puede comer saludablemente con confianza.
+            </p>
+            <div class="etiquetas">
+              <span class="badge text-bg-primary">Carta</span>
+              <span class="badge text-bg-primary">Face</span>
+              <span class="badge text-bg-primary">Ig</span>
+              <span class="badge text-bg-primary">Wp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Testimonios/Carrusel
+          1. Crear un elemento section flex con un padding 40px 40px 80px 40px, centrar todos los elementos que queden uno debajo del otro y centrados
+          2. Crear un h2 y un h3 y ajustar tamaños y colores
+          3. Incorporar un Carrusel de bootstrap
+              - Eliminar la sección de indicadores
+              - Cada item debe contener un imagen un parrafo y una seccion con 2 parrafos
+          4. El carrusel debe tener un ancho máximo de 800 px
+          5. Cada item del carrusel debe tener un alto de 500px
+          6. Cada imagen debe ser de 150px x 15px y debe tener un padding 10 10 20 10
+          7. Ajustar los tamaños de los textos y los tipos de fuentes
+      -->
+
+    <section class="Testimonios">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63689.33245027165!2d-76.2995619!3d3.8990995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39ec93c47a211b%3A0xade3dc568e433f40!2sGuadalajara%20de%20Buga%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1741625254777!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Pie de pagina (footer) 
+          1. Usar el elemnto footer
+          2. Usar una img
+          3. Usar una p
+          4. Crear un contenedor de las redes (cada red es una a con un i por dentro con cada ícono)
+          5. En un div colocar el copyright
+      -->
+
+    <footer>
+      <img src="img/icono_frame.png" width="80" height="50">
+      <div class="footerText">
+        <p>Capturamos ideas, creamos historias.</p>
+      </div>
+      <div class="footerRedes">
+
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-envelope"></i>
+
+      </div>
+
+      <div class="copyRight">
+        <p>Frame23. (2025) ©</p>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+  </body>
+
+  </html>

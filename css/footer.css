@@ -1,0 +1,23 @@
+footer {
+    background-color: #075712; /* Cambia el color según tu preferencia */
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+.footerText p {
+    margin-bottom: 10px;
+}
+
+.footerRedes i {
+    padding: 5px 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.copyRight p {
+    padding: 20px;
+    font-weight: 100;
+    font-size: 12px;
+}
