@@ -22,19 +22,19 @@ h1{
     margin-left: 1%;
 }
 
-
-
 .carousel-inner img {
-width: 100%;
-height: 500px; /* Ajusta esta altura según lo necesites */
-object-fit: cover; /* Hace que las imágenes cubran el espacio sin distorsión */
+    width: 100%;
+    height: 500px; 
+    object-fit: cover; 
 }
 
 
 #restaurantes{
     text-align: center;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
 
 }
 
@@ -55,7 +55,8 @@ object-fit: cover; /* Hace que las imágenes cubran el espacio sin distorsión *
 }
 
 .mainSection h2 {
-    color: rgb(77, 43, 15);
+    color: black;
+    font-size: 150%;
 }
 
 .aboutMe {
@@ -85,6 +86,16 @@ object-fit: cover; /* Hace que las imágenes cubran el espacio sin distorsión *
     font-size: 1.2rem;
 }
 
+.buga {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 80px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 150%;
+}
 .experience {
     padding: 40px 40px 60px 40px;
 }
@@ -92,16 +103,7 @@ object-fit: cover; /* Hace que las imágenes cubran el espacio sin distorsión *
 .experienceContent {
     text-align: center;
     padding: 20px;
-    border: 2px solid rgb(113, 112, 112);
-    box-shadow: 1px 1px 7px rgb(5, 46, 12);
-}
 
-.iconPC {
-    font-size: 2.5rem;
-    color: rgb(69, 130, 69);
-    background-color: rgb(7, 3, 34);
-    padding: 8px 19px;
-    border-radius: 50%;
 }
 
 .experienceContent h2 {
@@ -125,18 +127,10 @@ object-fit: cover; /* Hace que las imágenes cubran el espacio sin distorsión *
     align-items: center;
 }
 
-.carouselIMG {
-    max-width: 800px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
 
-.Testimonios h2 {
-    font-family: 'Permanent Marker', cursive;
-}
-
-.carouselIMG img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;    
+.Testimonios iframe {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 600px; /* Limita el ancho máximo */
+    height: auto; /* Permite que la altura se ajuste proporcionalmente */
+    aspect-ratio: 16/9; /* Mantiene la proporción del mapa */
 }
