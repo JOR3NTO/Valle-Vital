@@ -31,9 +31,8 @@ h1{
 
 #restaurantes{
     text-align: center;
-    padding: 20px;
     background-color: white;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Lilita One', cursive;
     font-size: 50px;
 
 }
@@ -94,7 +93,7 @@ h1{
 
 @media (max-width: 768px) {
     .buga {
-        font-size: 90%;
+        font-size: 70%;
     }
 }
 
@@ -131,8 +130,35 @@ h1{
 
 
 .Testimonios iframe {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    max-width: 600px; /* Limita el ancho máximo */
-    height: auto; /* Permite que la altura se ajuste proporcionalmente */
-    aspect-ratio: 16/9; /* Mantiene la proporción del mapa */
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    aspect-ratio: 16/9;
+}
+
+.Testimonios h2{
+    text-align: center;
+    background-color: white;
+    font-family: 'Lilita One', cursive;
+    font-size: 50px;
+}
+
+.card-body ul {
+    padding: 10;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.card-body ul li {
+    padding: 5px 0;
+}
+
+.card-body img{
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card{
+    border: none;
 }
