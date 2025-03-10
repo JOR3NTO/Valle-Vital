@@ -87,15 +87,17 @@ h1{
 }
 
 .buga {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 40px 80px 40px;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 40px;
     text-align: center;
-    align-items: center;
-    font-size: 150%;
+    font-size: 130%;
 }
+
+@media (max-width: 768px) {
+    .buga {
+        font-size: 90%;
+    }
+}
+
 .experience {
     padding: 40px 40px 60px 40px;
 }
