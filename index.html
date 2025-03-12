@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-custom">
       <div class="container-fluid navContent">
         <a class="" href="#">
           <!-- <img src="img/icono_frame.png" alt="" width="50" height="50"> -->
@@ -54,42 +54,46 @@
               <a class="nav-link" href="#restaurantes">Restaurantes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#equipo">Sobre nosotros</a>
+              <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section id="inicio" class="mainSection">
-      <div class="Superior container">
-        <h1>Valle Vital</h1>
-        <h2>Proyecto enfocado a la población Vallecaucana para dar una mejor visibilidad publicitaria a los restaurantes saludables del municipio de Guadalajara de Buga y sus alrededores.
-        </h2>
-      </div>
-
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/Carrusel/Botanica 2.JPG" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carrusel/365. 5.JPG" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/Carrusel/Obrador.jpg" class="d-block w-100" alt="...">
-          </div>
+    <section class="mainSection">
+      <div class="carousel-container">
+        <!-- Texto sobre el carrusel -->
+        <div class="carousel-text">
+          <h1>Valle Vital</h1>
+          <h2>Proyecto enfocado a la población Vallecaucana para dar una mejor visibilidad publicitaria a los restaurantes saludables del municipio de Guadalajara de Buga y sus alrededores.</h2>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    
+        <!-- Carrusel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Carrusel/Botanica 2.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carrusel/365. 5.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Carrusel/Obrador.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </section>
+    
 
     <div class="container text-center buga">
       <div class="row align-items-center">
@@ -108,29 +112,22 @@
         </div>
       </div>
     </div>
-    
-
-    <section class="aboutMe">
-      <div class="contenedor">
-        <img src="img/icono_frame.png" width="280" height="160">
-        <h2>¿Qué es Frame 23?</h2>
-        <p>Somos una productora de contenidos multimediales con un enfoque fresco,moderno y dinámico, especializados en piezas audiovisuales y gráficas que buscan destacar en el mercado.
-        </p>
-      </div>
-    </section>
-    
+        
     <section class="experience">
       <h2 id="restaurantes">Restaurantes</h2>
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 col-lg-4 experienceContent">
             <i class="bi"></i>
-            <img src="img/Iconos/LOGOBOTANICA.png" alt="" width="100" height="100">
+            <img src="img/Iconos/LOGOBOTANICA.png" 
+                alt="" 
+                class="img-fluid rounded" 
+                width="300" 
+                height="300" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imagenModalBotanica">
             <h2>Botánica</h2>
-            <p>Espacio creado para la gastronomía y cuidado, sostenibilidad del espacio refrescante enfocado en 
-              la cocina fresca y local, donde cada plato tiene exclusividad, ubicado en Buga, Botánica Restaurante 
-              ofrece una propuesta gastronómica enfocada en comida internacional, contemporánea y saludable.
-            </p>
+            <p></p>
             <div class="etiquetas">
               <a href="https://maps.app.goo.gl/PRmpvmetq5DnDjFg8" target="_blank" class="badge text-bg-success">
                 <i class="bi bi-geo-alt-fill"></i>
@@ -146,13 +143,37 @@
               </a>
             </div>
           </div>
+
+          <!-- ModalBotanica -->
+          <div class="modal fade" id="imagenModalBotanica" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"> 
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">Botánica</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="img/Carrusel/Botanica 2.JPG"  alt="Ejemplo" class="img-fluid mb-3">
+                  <p>
+                    Espacio creado para la gastronomía y cuidado, sostenibilidad del espacio refrescante enfocado en 
+                      la cocina fresca y local, donde cada plato tiene exclusividad, ubicado en Buga, Botánica Restaurante 
+                      ofrece una propuesta gastronómica enfocada en comida internacional, contemporánea y saludable.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-12 col-lg-4 experienceContent">
             <i class="bi"></i>
-            <img src="img/Iconos/LOGOBIOFOOD.png" alt="" width="100" height="100">
+            <img src="img/Iconos/LOGOBIOFOOD.png" 
+                alt="" 
+                class="img-fluid rounded" 
+                width="300" 
+                height="300" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imagenModalBiofood">
             <h2>Biofood, Cocina oculta</h2>
-            <p>La especialidad de bio food son las meriendas entre ellos se encuentran los parfaits, 
-              waffles, y crepes entre otros.. el más demandado son los parfaits y el parfaits más pedido 
-              es el de chocobanano es un parfait elaborado a base de cocoa y frutas de temporada.</p>
             <div class="etiquetas">
               <a href="https://www.facebook.com/share/14uHwSDs34/?mibextid=wwXIfr" target="_blank" class="badge text-bg-success">
                 <i class="bi bi-facebook"></i>
@@ -165,15 +186,36 @@
               </a>
             </div>
           </div>
+
+          <!-- ModalBiofood -->
+          <div class="modal fade" id="imagenModalBiofood" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"> 
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">Biofood, Cocina oculta</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="img/Carrusel/Botanica 2.JPG"  alt="Ejemplo" class="img-fluid mb-3">
+                  <p>
+                    La especialidad de bio food son las meriendas entre ellos se encuentran los parfaits, 
+                     waffles, y crepes entre otros.. el más demandado son los parfaits y el parfaits más pedido 
+                      es el de chocobanano es un parfait elaborado a base de cocoa y frutas de temporada.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-12 col-lg-4 experienceContent">
             <i class="bi"></i>
-            <img src="img/Iconos/LOGOVIDAFIT.png" alt="" width="100" height="100">
+            <img src="img/Iconos/LOGOVIDAFIT.png"
+                alt="" 
+                class="img-fluid rounded" 
+                width="300" 
+                height="300" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imagenModalVidaFit">   
             <h2>VidaFit</h2>
-            <p>Este establecimiento se dedica a promover un estilo de vida saludable, ofreciendo productos 
-              y comidas nutritivas. Se especializa en opciones alimenticias que incluyen pan de quinoa, 
-              proteínas y brownies saludables. Además, enfatizan la importancia de consumir frutas y verduras
-               frescas para mantener niveles adecuados. 
-            </p>
             <div class="etiquetas">
               <a href="https://maps.app.goo.gl/RiX5aCyk6RtNRyq48" target="_blank" class="badge text-bg-success">
                 <i class="bi bi-geo-alt-fill"></i>
@@ -189,6 +231,28 @@
               </a>
             </div>
           </div>
+
+          <!-- ModalVidaFit -->
+          <div class="modal fade" id="imagenModalVidaFit" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"> 
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">VidaFit</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="img/Carrusel/Botanica 2.JPG"  alt="Ejemplo" class="img-fluid mb-3">
+                  <p>
+                    Este establecimiento se dedica a promover un estilo de vida saludable, ofreciendo productos 
+                    y comidas nutritivas. Se especializa en opciones alimenticias que incluyen pan de quinoa, 
+                    proteínas y brownies saludables. Además, enfatizan la importancia de consumir frutas y verduras
+                    frescas para mantener niveles adecuados. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <br>
@@ -196,13 +260,14 @@
         <div class="row">
           <div class="col-md-12 col-lg-4 experienceContent">
             <i class="bi"></i>
-            <img src="img/Iconos/LOGOANTOJITOSALUDABLES.png" alt="" width="150" height="100">
+            <img src="img/Iconos/LOGOANTOJITOSALUDABLES.png"
+            alt="" 
+            class="img-fluid rounded" 
+            width="350" 
+            height="350" 
+            data-bs-toggle="modal" 
+            data-bs-target="#imagenModalAntojitosSaludables">   
             <h2>Antojitos Saludables</h2>
-            <p>Este establecimiento se enfoca en proporcionar opciones de comidas balanceadas, 
-              completas y deliciosas para el almuerzo diario. Ofrece una variedad de platos 
-              saludables que incluyen proteínas y otros nutrientes esenciales, adaptándose a 
-              quienes buscan mantener una alimentación equilibrada sin sacrificar el sabor.
-            </p>
             <div class="etiquetas">
               <a href="https://maps.app.goo.gl/ufwwaSsUHPAssS7B6" target="_blank" class="badge text-bg-success">
                 <i class="bi bi-geo-alt-fill"></i>
@@ -218,15 +283,41 @@
               </a>
             </div>
           </div>
+
+
+          <!-- ModalVidaFit -->
+          <div class="modal fade" id="imagenModalAntojitosSaludables" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"> 
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">Antojitos Saludables</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="img/Carrusel/Botanica 2.JPG"  alt="Ejemplo" class="img-fluid mb-3">
+                  <p>
+                    Este establecimiento se enfoca en proporcionar opciones de comidas balanceadas, 
+                    completas y deliciosas para el almuerzo diario. Ofrece una variedad de platos 
+                    saludables que incluyen proteínas y otros nutrientes esenciales, adaptándose a 
+                    quienes buscan mantener una alimentación equilibrada sin sacrificar el sabor. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
           <div class="col-md-12 col-lg-4 experienceContent">
             <i class="bi"></i>
-            <img src="img/Iconos/LOGOELOBRADOR.png" alt="" width="100" height="100">
+            <img src="img/Iconos/LOGOELOBRADOR.png"
+            alt="" 
+            class="img-fluid rounded" 
+            width="300" 
+            height="300" 
+            data-bs-toggle="modal" 
+            data-bs-target="#imagenModalObrador">  
             <h2>Panadería el Obrador</h2>
-            <p>Se especializa en la elaboración de una amplia variedad de panes, incluyendo opciones tradicionales, 
-              integrales y productos diseñados para personas con necesidades dietéticas específicas, como panes sin 
-              lácteos, sin gluten y sin azúcar. Además, ofrecen panes enriquecidos con ingredientes como chocolate, 
-              frutas, vegetales, frutos secos y hierbas medicinales, sumando más de 150 tipos diferentes de panes.
-            </p>
               <div class="etiquetas">
                 <a href="https://maps.app.goo.gl/eip187vnNeEAJjCe6" target="_blank" class="badge text-bg-success">
                   <i class="bi bi-geo-alt-fill"></i>
@@ -242,14 +333,39 @@
                 </a>
             </div>
           </div>
+
+          <!-- ModalObrador -->
+          <div class="modal fade" id="imagenModalObrador" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"> 
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">Panadería el Obrador</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="img/Carrusel/Botanica 2.JPG"  alt="Ejemplo" class="img-fluid mb-3">
+                  <p>
+                    Se especializa en la elaboración de una amplia variedad de panes, incluyendo opciones tradicionales, 
+                    integrales y productos diseñados para personas con necesidades dietéticas específicas, como panes sin 
+                    lácteos, sin gluten y sin azúcar. Además, ofrecen panes enriquecidos con ingredientes como chocolate, 
+                    frutas, vegetales, frutos secos y hierbas medicinales, sumando más de 150 tipos diferentes de panes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <div class="col-md-12 col-lg-4 experienceContent">
             <i class="bi"></i>
-            <img src="img/Iconos/LOGO365.png" alt="" width="150" height="100">
+            <img src="img/Iconos/LOGO365.png"
+            alt="" 
+            class="img-fluid rounded" 
+            width="350" 
+            height="300" 
+            data-bs-toggle="modal" 
+            data-bs-target="#imagenModal365">  
             <h2>365 Días Contigo</h2>
-            <p>Calidad para el consumo de su clientela, este lugar se dedica a ofrecer productos saludables, 
-              libres de harinas y azúcares refinados, así como de grasas vegetales. Es reconocido por ser un 
-              espacio donde se puede comer saludablemente con confianza.
-            </p>
             <div class="etiquetas">
               <a href="https://maps.app.goo.gl/JethnFLKRtz6q1Gk9" target="_blank" class="badge text-bg-success">
                 <i class="bi bi-geo-alt-fill"></i>
@@ -265,51 +381,34 @@
               </a>
             </div>
           </div>
+
+          <!-- Modal365 -->
+          <div class="modal fade" id="imagenModal365" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"> 
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">365 Días Contigo</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="img/Carrusel/Botanica 2.JPG"  alt="Ejemplo" class="img-fluid mb-3">
+                  <p>
+                    Calidad para el consumo de su clientela, este lugar se dedica a ofrecer productos saludables, 
+                    libres de harinas y azúcares refinados, así como de grasas vegetales. Es reconocido por ser un 
+                    espacio donde se puede comer saludablemente con confianza.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>
 
-    <section class="Testimonios">
-      <h2>Ubicación</h2>
-      <br>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63689.33245027165!2d-76.2995619!3d3.8990995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39ec93c47a211b%3A0xade3dc568e433f40!2sGuadalajara%20de%20Buga%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1741625254777!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <br>
-
-      <h2 id="equipo">Equipo de trabajo</h2>
-      <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/Valeria.JPG" alt="" width="200" height="250">
-              <h5 class="card-title">Valeria Domínguez</h5>
-              <ul class="card-text">
-                <li>Fotógrafo</li>
-                <li>Edición de video</li>
-                <li>Diseñador gráfico</li>
-                <li>Marketing Digital</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/Nicolás.PNG" alt="" width="200" height="250">
-              <h5 class="card-title">Nicolás Torres</h5>
-              <ul class="card-text">
-                <li>Fotógrafo</li>
-                <li>Edición de fotografía y video</li>
-                <li>Diseñador gráfico (Junior)</li>
-                <li>Community Manager</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>  
-    </section>
-
     <footer>
-      <img src="img/icono_frame.png" width="80" height="50">
+      <h2>Valle Vital</h2>
       <div class="footerText">
         <p>Capturamos ideas, creamos historias.</p>
       </div>
@@ -327,6 +426,8 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous">
     </script>
+
+    <script src="move.js"></script>
   </body>
 
   </html>
