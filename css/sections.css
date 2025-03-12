@@ -65,43 +65,70 @@ h1{
   
 .mockup {
     width: 100vw; /* Ocupar todo el ancho de la pantalla */
-    height: 50vh; /* Ocupar toda la altura de la pantalla */
+    height: 70vh; /* Ocupar 70% de la altura de la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff; /* Color de fondo */
     overflow: hidden;
     position: relative;
 }
 
 .mockup .contenedor {
-    width: 100%;
-    height: 100%;
-    position: relative;
+    width: 100%; /* Ocupar todo el ancho */
+    height: 100%; /* Ocupar toda la altura */
+    position: relative; /* Corregido para evitar conflictos con la imagen */
+    text-align: center; /* Centrar el contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
 }
 
 .mockup img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen para cubrir todo sin deformarse */
+    object-fit: cover; /* Ajustar imagen sin deformarla */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Para que la imagen quede detrás del contenido */
+    filter: brightness(50%);
+}
+
+.mockup h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Asegurar que el texto esté por encima de la imagen */
 }
 
 .mockup .btn {
-    position: absolute;
-    bottom: 5%; /* Lo coloca en la parte inferior */
-    left: 45%;
-    transform: translateY(-50%); /* Ajusta para que esté centrado verticalmente */
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #054D1B; /* Color azul Bootstrap */
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #054D1B;
     border: none;
     border-radius: 5px;
     color: white;
     text-decoration: none;
     transition: background 0.3s ease;
+    z-index: 1; /* Asegurar que el botón esté visible */
 }
 
 .mockup .btn:hover {
-    background-color:#0a8f3a; /* Color más oscuro al pasar el mouse */
+    background-color: #07812c;
+}
+
+@media (max-width: 768px) {
+    .mockup h2 {
+        font-size: 18px; /* Reducir tamaño en pantallas pequeñas */
+    }
+
+    .mockup .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 }
 
 
@@ -112,6 +139,11 @@ h1{
     font-family: 'Lilita One', cursive;
     font-size: 50px;
 }
+
+.experienceContent img {
+    cursor: pointer;
+}
+
 
 .mainSection h1 {
     margin-top: 20px;
