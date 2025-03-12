@@ -8,6 +8,12 @@
     
 }
 
+#ValleVital{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+
+}
 
 .navbar {
     position: fixed;
@@ -160,7 +166,7 @@ h1{
 .aboutMe {
     display: flex;
     height: 500px;
-    background-color: #075712;
+    background-color: #000000;
     color: white;
     justify-content: center;
     text-align: center;
